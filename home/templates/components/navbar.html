@@ -1,0 +1,27 @@
+{% load static %}
+<nav class="navbar navbar-info navbar-expand-lg bg-info">
+  <div class="container-fluid">
+    <p class="navbar-brand"><img src="{% static 'AC_ICON.ico' %}" id="brand-image" /> Alycia Clark</p>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="{% url 'home' %}"
+          >Home</a
+        >
+        <a class="nav-link" href="{% url 'skills' %}">Skills</a>
+        <a class="nav-link" href="{% url 'experience' %}">Experience</a>
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
